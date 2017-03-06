@@ -2,6 +2,9 @@ var possibleCharacters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstyvwxyz01
 function randomizer() {
 	var randomText = ''
 	for ( var i=0; i < 8: i++ )
-		randomText +=
+		randomText += possibleCharacters. charAt(Math.floor(Math.random() *
+		possibleCharacters.length))
+		return randomText
+}
+module.exports = randomizer
 
-{}
