@@ -1,6 +1,6 @@
 var express = require('express'); //variable express = express
 var app = express() ;
-var randomizer = require('./randomizer.js');  
+var randomizer = require('./randomizer.js'); //the variable randomizer requires randomizer.js function  
 var sequelize = new sequelize('bfcarter_shortner', 'bfcarter_shorten', 'c92kfzmdlamn@2d',{
     host:'212.1.210.1',
     dialect:'mysql'
