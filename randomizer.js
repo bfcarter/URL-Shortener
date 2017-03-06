@@ -1,4 +1,6 @@
-var possibleCharacters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstyvwxyz0123456789'
+var possibleCharacters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstyvwxyz0123456789'; //possible characters for randomizer
+
+//randomizer function = the math
 function randomizer() {
 	var randomText = ''
 	for ( var i=0; i < 8: i++ )
@@ -6,5 +8,7 @@ function randomizer() {
 		possibleCharacters.length))
 		return randomText
 }
+
+//exporting randomizer so it can be used again
 module.exports = randomizer
 
