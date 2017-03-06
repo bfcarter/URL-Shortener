@@ -19,3 +19,4 @@ var Url = sequelize.define('url', {
 })
 
 app.listen(3000)
+})
