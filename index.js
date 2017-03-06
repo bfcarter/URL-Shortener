@@ -15,8 +15,16 @@ var Url = sequelize.define('url', {
     }
 }, {
     freezeTableName: true
-}
-})
-
+});
+url.sync({force;false}).then(function (){
+app.get('/api/makeurl', function (req,res) {
+	var random = randomizer()
+	var longurl = req.query.longurl
+	
+	url.create({
+		short:random,
+		long: longurl
+		})
+		res.send(random)
 app.listen(3000)
 })
