@@ -5,6 +5,8 @@ var sequelize = new sequelize('bfcarter_shortner', 'bfcarter_shorten', 'c92kfzmd
     host:'212.1.210.1',
     dialect:'mysql'
 })
+
+var d = require("./debug.js")
 //shorten url
 var Url = sequelize.define('url', {
     short: {
@@ -27,6 +29,7 @@ app.get('/api/makeurl', function (req,res) {
 		short:random,
 		long: longurl
 		})
+		d.debug("created " + random + " url")
 		res.send(random) //send random url 
 app.listen(3000) //listen on 3000
 })
