@@ -30,6 +30,20 @@ app.get('/api/makeurl', function (req,res) {
 		long: longurl
 		})
 		d.debug("created " + random + " url")
-		res.send(random) //send random url 
+		res.send(random) //send random url
+		
+		app.get(/'api/gourl/:short', function(req, res) {
+		var random = randomizer()
+		var short + req.params.short
+		
+		Url.findOne({
+			where: {
+				short: short
+			}
+		}).then(function(url) {
+		d.debug("redirected to " + url.long)
+		res.redirect(url.long)
+		})
+	})
 app.listen(3000) //listen on 3000
 })
