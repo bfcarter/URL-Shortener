@@ -1,14 +1,14 @@
-var express = require('express'); //variable express = express
-var app = express() ;
-var randomizer = require('./randomizer.js'); //the variable randomizer requires randomizer.js function  
-var sequelize = new sequelize('bfcarter_shortner', 'bfcarter_shorten', 'c92kfzmdlamn@2d',{
+const express = require('express'); //variable express = express
+const app = express() ;
+const randomizer = require('./randomizer.js'); //the variable randomizer requires randomizer.js function  
+const sequelize = new sequelize('bfcarter_shortner', 'bfcarter_shorten', 'c92kfzmdlamn@2d',{
     host:'212.1.210.1',
     dialect:'mysql'
 })
 
-var d = require("./debug.js")
+const d = require("./debug.js")  //debugging
 //shorten url
-var Url = sequelize.define('url', {
+const Url = sequelize.define('url', {
     short: {
         type: sequelize.string,
     },
