@@ -22,8 +22,8 @@ const Url = sequelize.define('url', {
 
 url.sync({force;false}).then(function (){
 app.get('/api/makeurl', function (req,res) {
-	var random = randomizer()
-	var longurl = req.query.longurl
+	const random = randomizer()
+	const longurl = req.query.longurl
 //creating url	
 	url.create({
 		short:random,
@@ -33,8 +33,8 @@ app.get('/api/makeurl', function (req,res) {
 		res.send(random) //send random url
 		
 		app.get(/'api/gourl/:short', function(req, res) {
-		var random = randomizer()
-		var short + req.params.short
+		const random = randomizer()
+		const short + req.params.short
 		
 		Url.findOne({
 			where: {
