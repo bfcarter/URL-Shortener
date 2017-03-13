@@ -7,4 +7,4 @@ endpoints
 get/api
 Retrive new url
 get/api/gourl/shortid
-redirect
+redirect 
