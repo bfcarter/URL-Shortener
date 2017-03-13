@@ -4,7 +4,7 @@
 "description": "",
 "main": "index.js",
 "scripts": {
-"test":"mocha"
+"test":"mocha" //updated to mocha
 },
 "keywords":[],
 "author": ""
@@ -15,5 +15,5 @@
 	"mysql": "^2.13.0",
 	"sequelize":"^3.30.2",
 	},
-	"devDependencies":{}
+	"devDependencies":{} 
 }
